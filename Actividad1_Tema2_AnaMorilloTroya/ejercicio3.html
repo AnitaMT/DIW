@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usabilidad en las imágenes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            padding: 1em;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .background-image {
+            background-image: url('https://www.eniun.com/wp-content/uploads/Tutorial-Usabilidad-1-900x450.png');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .background-image p {
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+            padding: 1em;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        /*   .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            height: auto;
+            max-width: 100%;
+            margin: auto;
+            padding: 2em;
+        }
+
+        .background-image p{
+            color:#ffffff;
+            font-weight: bold;
+            text-align: center;
+            margin: auto;
+        }
+
+        .background-image {
+            background-image: url('https://www.eniun.com/wp-content/uploads/Tutorial-Usabilidad-1-900x450.png');
+            background-size:auto;
+            height: 300px;
+            padding: 2em;
+            max-width: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Usabilidad en las imágenes</h1>
+    <p>Imagen no optimizada para la web y sin etiqueta alt descriptiva:</p>
+    <div class="image-container">
+        <img src="https://www.eniun.com/wp-content/uploads/Curso-Visual-Studio-Code.png" alt="">
+    </div>
+    <p>Texto y fondo con poco contraste:</p>
+    <div class="background-image">
+        <p>De esta manera el texto es más fácil de leer.</p>
+    </div>
+</body>
+
+</html>
