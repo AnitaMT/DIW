@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <h1>Dibujando texto</h1>
+    <canvas id="texto" width="300" height="200" style="border:1px solid black;">
+    </canvas>
+
+    <script>
+        const canvas = document.getElementById('texto');
+        const ctx = canvas.getContext('2d');
+
+        ctx.font = "bold 40px Arial ";
+        ctx.fillStyle = "blue";
+        ctx.textAlign = "left";
+        ctx.fillText("Ejercicio Final", 10, 100);
+
+    </script>
+</body>
+</html>

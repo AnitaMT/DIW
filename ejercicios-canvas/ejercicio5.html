@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>Círculo</h1>
+    <canvas id="circulo" width="400" height="400" style="border:1px solid black;">
+    </canvas>
+
+    <script>
+        var c = document.getElementById("circulo");
+        var ctx = c.getContext("2d");
+        
+        ctx.fillStyle = "blue";
+        ctx.lineWidth = 2;
+
+
+        ctx.beginPath();
+        ctx.arc(200, 200, 100, 0, Math.PI * 2);
+        ctx.fill();
+    </script>
+</body>
+</html>

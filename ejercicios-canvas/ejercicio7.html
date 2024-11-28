@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h1>Elipse rellena</h1>
+    <canvas id="elipseRelleno" width="400" height="200" style="border:1px solid black;">
+    </canvas>
+
+    <script>
+        const canvas = document.getElementById('elipseRelleno');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = "red";
+        ctx.lineWidth = 2;
+
+        ctx.beginPath();
+        ctx.ellipse(200,100,100,60,0,0, Math.PI * 2);
+        ctx.fill();
+    </script>
+</body>
+</html>

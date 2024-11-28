@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Dibujar una línea recta</h1>
+    <canvas id="lineaRecta" width="400" height="400" style="border:1px solid black;">
+    </canvas>
+
+    <script>
+        var c = document.getElementById("lineaRecta");
+        var ctx = c.getContext("2d");
+
+        ctx.moveTo(50,50);
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 5;
+        ctx.lineTo(350,350);
+        ctx.stroke();
+    </script>
+</body>
+</html>
