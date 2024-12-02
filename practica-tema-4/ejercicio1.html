@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galletita de Jengibre</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: green; border-bottom: 2px dashed red;">¡Este es Jengi!</h1>
+    <!--Creo el contenedor svg para comenzar a dibujar la galletita de jengibre. He añadido además estilos para que se vea mejor en el navegador.-->
+    <svg width="200" height="200" style="border:3px dotted red; background-color:rgb(186, 240, 193); display:flex; margin: 0 auto;" xmlns="http://www.w3.org/2000/svg">
+
+        <!--Dibujo un círculo para la cabeza y se rellena del color que se especifica-->
+        <circle cx="100" cy="50" r="40" stroke=" #cd803d" fill=" #cd803d"/>
+
+        <!--Hago una línea redondeada para crear los brazos justo debajo de la cabeza -->
+        <line x1="50" y1="100" x2="150" y2="100" stroke-width="35px" stroke="#cd803d" stroke-linecap="round" />
+
+        <!--A continuación hago 2 líneas redondeadas (gracias a la propiedad stroke-linecap="round") 
+        para las piernas. Una tiene la x con valor 75 para que esté hacia la izquierda 
+        y la otra 125 para que esté en la dirección opuesta.-->
+        <line x1="75" y1="180" x2="100" y2="100" stroke-width="35px" stroke="#cd803d" stroke-linecap="round" />
+        <line x1="125" y1="180" x2="100" y2="100" stroke-width="35px" stroke="#cd803d" stroke-linecap="round" />
+
+        <!--Ahora, creo un rectángulo con bordes redondeados y sin relleno para crear la boca.-->
+        <rect x="84" y="64" rx="5" ry="10" width="30" height="7" stroke="white" stroke-width="3px" fill="none"/>
+
+        <!--Creo dos círculos blancos para los ojos-->
+        <circle cx="83" cy="42" r="4" stroke=" white" fill=" white"/>
+        <circle cx="116" cy="42" r="4" stroke=" white" fill=" white"/>
+
+        <!--Finalmente, hago dos círculos negros para los botones y los posiciono verticalmente uno encima del otro.-->
+        <circle cx="100" cy="100" r="6" stroke=" black" fill=" black"/>
+        <circle cx="100" cy="125" r="6" stroke=" black" fill=" black"/>
+
+    </svg>
+</body>
+
+</html>
