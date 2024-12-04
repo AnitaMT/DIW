@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casita de Anita</title>
+</head>
+
+<body>
+    <!--En primer lugar, se crea el contenedor svg para comenzar a dibujar la casa. 
+    Le he añadido estilos para que en el navegador se vea más bonito.-->
+    <svg width="200" height="200" style="border:3px dashed indianred; display:flex; margin: 0 auto; background-color: antiquewhite;" xmlns="http://www.w3.org/2000/svg">
+
+        <!--Comienzo creando el polígono que será la base de la casa.-->
+        <polygon points="100,40 50,90 50,160 150,160 150,90" stroke="black" stroke-width="2px" fill="white"/>
+
+        <!--Creo un polyline para hacer el techo.-->
+        <polyline points="43,90 100,33 157,90" stroke="indianred" stroke-width="8px" stroke-linecap="round" fill="none"/>
+
+        <!--Creo un círculo y dos líneas para dibujar la ventana redonda de la planta de arriba.-->
+        <circle cx="100" cy="83" r="15" stroke="black" stroke-width="2px" fill="khaki"/>
+        <line x1="100" y1="67" x2="100" y2="97" stroke-width="2px" stroke="black"/>
+        <line x1="85" y1="83" x2="115" y2="83" stroke-width="2px" stroke="black"/>
+
+        <!--Ahora, creo un rectángulo con border redondeados y dos líneas para crear la otra ventana de la casa.-->
+        <rect x="110" y="112" rx="4" width="30" height="25" stroke="black" stroke-width="2px" fill="khaki"/>
+        <line x1="125" y1="113" x2="125" y2="138" stroke-width="2px" stroke="black"/>
+        <line x1="109" y1="125" x2="140" y2="125" stroke-width="2px" stroke="black"/>
+
+        <!--Hago también un pequeño rectángulo para la parte de abajo de la ventana -->
+        <rect x="107" y="136" rx="4" width="35" height="4" stroke="black" stroke-width="2px" fill="indianred"/>
+
+        <!--Creo otro rectángulo para crear la puerta-->
+        <rect x="64" y="105" rx="2" width="25" height="47" stroke="black" stroke-width="2px" fill="indianred"/>
+        
+        <!--Ahora, hago un círculo para el pomo de la puerta.-->
+        <circle cx="72" cy="127" r="2" stroke="black" stroke-width="2px" fill="white"/>
+
+        <!--Finalmente, hago dos rectángulos para los escalones de la casa.-->
+        <rect x="61" y="150" width="30" height="5" stroke="black" stroke-width="2px" fill="grey"/>
+        <rect x="58" y="155" width="36" height="5" stroke="black" stroke-width="2px" fill="grey"/>
+
+    </svg>
+</body>
+
+</html>
