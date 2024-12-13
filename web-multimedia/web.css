@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    font-family: 'Bangers', sans-serif;
+    background-color: #ffdcfd;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/fondito.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+header {
+    background: linear-gradient(to bottom, rgb(84, 229, 248), #0099ff, #fcfcfc);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.galeria img {
+    max-width: 200px;
+    border-radius: 10px;
+    object-fit: cover; 
+    border: 15px solid #ffcc00;
+}
+.video-section, .audio-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.video-section iframe{
+    border: 15px solid #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.audio-section audio{
+    border: 15px solid #ffcc00;
+    border-radius: 10px;
+}
+
+.gif-section {
+    text-align: center;
+    padding: 20px;
+}
+.gif-galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.gif-galeria img {
+    max-width: 200px;
+    border-radius: 10px;
+    border: 15px solid #ffcc00;
+}
+
+.links {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
